@@ -47,6 +47,24 @@ body {
   bottom: 104px;
   background-color: #600;
 }
+@media screen and (max-width: 750px){
+  .language-ribbon {
+    bottom: 70px;
+  }
+}
+@media screen and (max-width: 750px){
+  .contact-ribbon {
+    bottom: 70px;
+    left: inherit;
+    right: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+    box-shadow: black 5px 5px 10px;
+  }
+}
 /* END NAVIGATION BAR */
 
 
@@ -212,6 +230,9 @@ body {
 
 
 /* SPECIALIZATION MODALS */
+.modal-title {
+  text-align: center;
+}
 .modal-content {
   background-color: #fff5ce;
   color: #600;
@@ -412,8 +433,18 @@ footer {
 
 /* TOPOGRAPHY */
 .header h1 {
-  font-size: 3em;
+  font-size: 5em;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 975px){
+  .header h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 550px){
+  .header h1 {
+    font-size: 2.5em;
+  }
 }
 h1,
 h3 {
