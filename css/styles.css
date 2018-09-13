@@ -1,0 +1,453 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #003308;
+  position: relative;
+  background-attachment: fixed;
+  background-image: url('../img/textures/paper.png');
+  opacity: .9;
+}
+
+
+/* NAVIGATION BAR */
+.navbar {
+  padding: 0px 20px;
+}
+.project-name {
+  text-transform: uppercase;
+}
+.project-name a {
+  color: white;
+}
+.navbar a {
+  cursor: pointer;
+}
+.ribbon {
+  position: fixed;
+  left: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  box-shadow: black -5px 5px 10px;
+}
+.ribbon a {
+  color: white;
+  font-family: 'Oswald';
+  font-size: 20px;
+}
+.language-ribbon {
+  bottom: 174px;
+  background-color: #4f7d5e;
+}
+.contact-ribbon {
+  bottom: 104px;
+  background-color: #600;
+}
+/* END NAVIGATION BAR */
+
+
+/* PARALLAX JUMBOTRON */
+#parallax-intro {
+  position: relative;
+  overflow-y: hidden;
+}
+.name-header {
+  color: #f2e7ac;
+  position: absolute;
+  top: 75px;
+  z-index: 1;
+  background-color: #4f7d5e;
+  width: 100%;
+  font-size: 4em;
+  text-align: center;
+  opacity: .8;
+  transition: 0ms;
+}
+@media screen and (max-width: 975px){
+  .name-header {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 750px){
+  .name-header {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 600px){
+  .name-header > span {
+    display: block;
+  }
+}
+.description-header {
+  color: #600;
+  position: absolute;
+  top: 420px;
+  z-index: 1;
+  margin-left: 15%;
+  background-image: url('../img/textures/cloud-background.jpg');
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  width: 70%;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  font-family: 'Oswald';
+  text-align: center;
+}
+@media screen and (max-width: 975px){
+  .description-header {
+    font-size: 1.4em;
+    margin-left: 0px;
+    width: 100%;
+    top: 350px;
+  }
+}
+.fuji-pic {
+  width: 100%;
+  height: 1100px;
+  position: relative;
+  overflow-y: hidden;
+}
+.parallax-pics {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1100px;
+  top: 50px; /* offsets the 50px navigation bar */
+  margin-bottom: 50px; /* offsets the 'top: 50px' from above */
+}
+.fuji-top-parallax-pic {
+  background-image: url('../img/parallax/fuji_top.jpg');
+}
+.mid-2-parallax-pic {
+  background-image: url('../img/parallax/mid_2.gif');
+}
+.mid-1-parallax-pic {
+  background-image: url('../img/parallax/mid_1.gif');
+}
+.bottom-2-parallax-pic {
+  background-image: url('../img/parallax/bottom_2.gif');
+}
+.bottom-1-parallax-pic {
+  background-image: url('../img/parallax/bottom_1.gif');
+}
+.medium-screen-pic {
+  background-position: -200px 0px;
+  margin-right: -200px;
+}
+.small-screen-pic {
+  background-position: -350px 0px;
+  margin-right: -350px;
+}
+/* END PARALLAX JUMBOTRON */
+
+
+/* ABOUT */
+.about-header {
+  margin-bottom: 0px !important;
+}
+.column i {
+  font-size: 1.2em;
+  letter-spacing: 10px;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+.header {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container h1 {
+  text-align: center;
+}
+.column {
+  margin-top: 50px;
+}
+.image img {
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  filter: grayscale(50%) invert(20%) contrast(200%);
+}
+@media screen and (max-width: 1100px){
+  .image img {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px){
+  .image img {
+    max-width: 300px;
+  }
+}
+#about-section h3 {
+  text-align: center;
+}
+.about-accordion {
+  margin: 50px;
+  padding-top: 15px;
+}
+#accordion_section .panel, #accordion_section .panel-heading {
+  border-color: #600;
+  color: white;
+  background-color: rgba(0,0,0,0);
+}
+#accordion_section .panel-heading {
+  background-color: #600;
+  color: #fff5cc;
+}
+#accordion_section .panel-body {
+  background-color: rgba(0,0,0,0);
+  color: #600;
+  font-family: 'Oswald';
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+/* END ABOUT */
+
+
+/* SPECIALIZATION MODALS */
+.modal-content {
+  background-color: #fff5ce;
+  color: #600;
+}
+.modal-body h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+.modal-body p {
+  text-align: center;
+  text-transform: uppercase;
+}
+/* END SPECIALIZATION MODALS */
+
+
+/* SKILL CARDS */
+.skill-card {
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.skill-card a {
+  text-decoration: none;
+}
+.skill-card-title {
+  height: 50px;
+  border-radius: 5px;
+  background-color: #600;
+  color: #fff5ce;
+  text-align: center;
+}
+.skill-card-title > h2 {
+  position: relative;
+  top: 5px;
+}
+.skill-card:hover img {
+  transform: scale(1.2);
+  opacity: .3;
+}
+.skill-card:hover .skill-card-title {
+  opacity: .85;
+}
+.skill-card img {
+  transition: 500ms;
+}
+.overlayed-message {
+  display: none;
+  color: #600;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skill-card:hover .overlayed-message {
+  display: block;
+}
+/* END SKILL CARDS */
+
+
+/* CONTACT */
+#contact-body {
+  padding-bottom: 50px;
+  max-width: 500px;
+  margin: auto;
+}
+#contact-body .contact-info p {
+  font-size: 1.5em;
+}
+@media screen and (max-width: 1230px){
+  #contact-body .contact-info p {
+    font-size: 1.3em;
+  }
+}
+.contact-info {
+  text-align: center;
+}
+.info > h1 {
+  padding-top: 70px;
+}
+#contact-section {
+  padding-bottom: 100px;
+}
+.mailto-link {
+  color: inherit;
+}
+#contact-body input, #contact-body textarea {
+  background-attachment: fixed;
+  font-family: fantasy;
+  letter-spacing: 2px;
+  background-image: url('../img/textures/paper.png');
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  webkit-box-shadow: none;
+}
+::placeholder {
+  color: #600 !important;
+  opacity: .8 !important;
+}
+#contact-body button {
+  border-radius: 50%;
+  border-color: #850000;
+  color: #850000;
+  font-family: fantasy;
+  background-color: wheat;
+  font-size: 1.3em;
+  padding: 0px;
+  width: 55px;
+  height: 50px;
+  letter-spacing: 2px;
+  padding-top: 5px;
+  font-weight: bolder;
+}
+/* END CONTACT */
+
+
+/* MESSAGE RECEIVED PAGE */
+.message-received-page,
+.message-received-page a,
+.error-page,
+.error-page a {
+  text-align: center;
+  color: #600;
+}
+.message-received-message, .error-message {
+  position: absolute;
+  left: 40%;
+  font-size: 2em;
+}
+@media screen and (max-width: 790px){
+  .message-received-message, .error-message {
+    position: static;
+    text-align: center;
+  }
+  .bird-pic img {
+    border-top-right-radius: 50px;
+  }
+}
+.bird-pic {
+  padding: 0px;
+}
+.bird-pic img {
+  width: 100%;
+  border-bottom-right-radius: 50px;
+}
+/* END MESAGE RECEIVED PAGE */
+
+
+/* FOOTER */
+footer {
+  background-color: #600;
+  margin-top: -50px;
+  min-height: 50px;
+  border-top: solid black 1px;
+}
+.copyright-info {
+  color: #fff5ce;
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-row {
+  padding-bottom: 10px;
+}
+/* END FOOTER */
+
+
+/* BREAK SECTIONS */
+.break-section {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  position: relative;
+}
+.break-body {
+  height: 150px;
+  background-repeat: no-repeat;
+}
+.left-cone {
+  -webkit-clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../img/art/asakusa.jpg');
+}
+.right-cone {
+  -webkit-clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0 75%);
+  clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0 75%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../img/art/asakusa.jpg');
+  background-position: center bottom;
+}
+/* END BREAK SECTIONS */
+
+
+/* TOPOGRAPHY */
+.header h1 {
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+h1,
+h3 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+p,
+a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+hr {
+  border-color: #330003;
+}
+.dark-red {
+  color: #330003;
+}
+/* END TOPOGRAPHY */
+
+
+/* ANCHOR */
+.anchor {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* END ANCHOR */
+
+
+/* BOOTSTRAP CSS OVERRIDE */
+.panel-heading {
+  font-weight: 400;
+  text-transform:inherit;
+  opacity: .9;
+}
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* END BOOTSTRAP CSS OVERRIDE */
